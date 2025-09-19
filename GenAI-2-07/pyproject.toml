@@ -1,0 +1,10 @@
+[project]
+name = "genai-1-07"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "nltk>=3.9.1",
+    "rake-nltk>=1.0.6",
+]
