@@ -7,4 +7,6 @@ requires-python = ">=3.12"
 dependencies = [
     "nltk>=3.9.1",
     "rake-nltk>=1.0.6",
+    "wordcloud>=1.9.0",
+    "matplotlib>=3.7.0"
 ]
