@@ -121,11 +121,14 @@ def main():
         all_phrases.append((score, phrase))
         
         print_count += 1
-    
+
+    # Если не получилось найти 5 фраз длины 2-4 то просим пользователя дать больше выборку начальных фраз для фильтрации
     if print_count != top_n :
         print("Increase the top_k value !!!")
 
-    create_worldcloud(all_phrases)
+    # Если нашли хотя бы 1 подходящую фразу то создаем облако
+    if print_count != 0:
+        create_worldcloud(all_phrases)
 
 if __name__ == "__main__" :
     main()
