@@ -2,6 +2,8 @@
 
 Extract top 5 key phrases with len 2-4 from text using RAKE (Rapid Automatic Keyword Extraction) with `rake_nltk`. Includes optional interpretable score breakdown (degree/frequency per word).
 
+## Gen-2-07 file name - Rake_with_sort.py in src 
+
 ## Requirements
 
 - Python 3.12+
