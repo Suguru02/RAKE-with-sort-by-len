@@ -14,6 +14,7 @@ Install uv(if needed) and sync dependencies:
 ```
 git clone https://github.com/Suguru02/RAKE-with-sort-by-len
 cd RAKE-with-sort-by-len
+cd GenAI-2-07
 
 # Install uv
 curl -LsSf https://astral.sh/uv/install.sh | sh
