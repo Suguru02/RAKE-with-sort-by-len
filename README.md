@@ -14,33 +14,18 @@ Extract top 5 key phrases with len 2-4 from text using RAKE (Rapid Automatic Key
 Install uv(if needed) and sync dependencies:
 
 ```
-#!/bin/bash
-
-# Клонируем репозиторий
 git clone https://github.com/Suguru02/RAKE-with-sort-by-len
 cd RAKE-with-sort-by-len
 cd GenAI-2-07
 
-# Устанавливаем uv
+# Install uv
 curl -LsSf https://astral.sh/uv/install.sh | sh
 echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 
-# Создаем виртуальное окружение и устанавливаем зависимости
+# Create .venv and install project deps
 uv sync
-
-# Активируем виртуальное окружение
 source .venv/bin/activate
-
-# Скачиваем необходимые данные NLTK
-python -c "
-import nltk
-nltk.download('punkt')
-nltk.download('stopwords')
-print('NLTK данные успешно загружены')
-"
-
-echo "Установка завершена! Виртуальное окружение активировано."
 
 ```
 On first run, the script will download required NLTK resources (stopwords, punkt).
