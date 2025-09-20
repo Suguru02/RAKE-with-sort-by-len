@@ -1,12 +1,16 @@
 [project]
-name = "genai-1-07"
+name = "genai-2-07"
 version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
+description = "RAKE keyword extraction with wordcloud visualization"
 requires-python = ">=3.12"
 dependencies = [
     "nltk>=3.9.1",
     "rake-nltk>=1.0.6",
-    "wordcloud>=1.9.0",
-    "matplotlib>=3.7.0"
+    "wordcloud>=1.9.3",
+    "matplotlib>=3.8.0",
+    "pillow>=10.0.0"
 ]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
